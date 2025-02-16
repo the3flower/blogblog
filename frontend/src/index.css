@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.ProseMirror:focus {
+    outline: none;
+    /*removes the focus outline*/
+}
+
+button {
+    margin: auto 3px;
+}
+
+.tiptap {
+    :first-child {
+        margin-top: 0;
+    }
+
+    /* padding: 20px 10rem; */
+    /* font-family: "Times New Roman",
+    Times,
+    serif; */
+
+
+    /* List styles */
+    ul,
+    ol {
+        padding: 0 1rem;
+        margin: 1.25rem 1rem 1.25rem 0.4rem;
+
+
+        li p {
+            margin-top: 0.25em;
+            margin-bottom: 0.25em;
+        }
+    }
+
+    /* Heading styles */
+    h1 {
+        line-height: 1.1;
+        margin-top: 2.5rem;
+        text-wrap: pretty;
+    }
+
+    h1 {
+        margin-top: 3.5rem;
+        margin-bottom: 1.5rem;
+        font-weight: 600;
+    }
+
+    h1 {
+        /* font-size: 2.5rem; */
+    }
+
+
+    /* Code and preformatted text styles */
+    code {
+        border-radius: 0.4rem;
+        color: var(--black);
+        font-size: 0.9rem;
+        padding: 0.25em 0.3em;
+    }
+
+    pre {
+        background: #202938;
+        border-radius: 0.5rem;
+        color: white;
+        font-family: 'JetBrainsMono', monospace;
+        margin: 1.5rem 0;
+        padding: 0.75rem 1rem;
+
+        code {
+            background: none;
+            color: inherit;
+            font-size: 0.8rem;
+            padding: 0;
+        }
+    }
+
+    blockquote {
+        border-left: 3px solid grey;
+        margin: 1.5rem 0;
+        padding-left: 1rem;
+    }
+
+    /* hr {
+        border: none;
+        border-top: 1px solid grey;
+        margin: 2rem 0;
+    } */
+}
+
+.control-group {
+    .button-group {
+        button {
+            /* padding: 0 5px; */
+            /* font-size: 14px; */
+
+        }
+
+
+        .is-active {
+            background-color: var(--light-gray);
+
+
+        }
+
+        .is-active:hover {
+            background-color: var(--secondary-gray);
+
+        }
+    }
+}
